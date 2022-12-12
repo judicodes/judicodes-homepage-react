@@ -17,15 +17,3 @@ npm install
 ```
 npm start
 ```
-
-### Compiles and minifies for production
-
-```
-npm build
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
