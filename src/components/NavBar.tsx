@@ -4,7 +4,7 @@ function NavBar() {
   return (
     <Flex
       as='header'
-      bg='gray.300'
+      bg='orange.200'
       position='sticky'
       height='28'
       top='-14'

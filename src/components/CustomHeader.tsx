@@ -3,7 +3,7 @@ import source from '../assets/images/judi.webp';
 
 function CustomHeader({ ...rest }) {
   return (
-    <Flex direction='column' align='center' bg='gray.200' {...rest}>
+    <Flex direction='column' align='center' bg='orange.100' {...rest}>
       <Heading as='h1' textTransform='uppercase' paddingBottom={4} fontSize='4xl' fontWeight='thin'>
         Judith Boehlert
       </Heading>

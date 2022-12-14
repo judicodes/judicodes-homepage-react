@@ -16,7 +16,7 @@ import '@fontsource/raleway/900.css';
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box bg='gray.100' height='full' minHeight='100vh'>
+      <Box bg='orange.50' height='full' minHeight='100vh'>
         <NavBar />
         <CustomHeader paddingTop={8} paddingBottom={36} />
         <InfoCardStack paddingBottom={8} marginTop={-24} />

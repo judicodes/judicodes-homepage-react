@@ -7,7 +7,7 @@ export interface CustomCardProps {
 
 function CustomCard({ title, content }: CustomCardProps) {
   return (
-    <Card width='xl' bg='white'>
+    <Card width='xl' bg='white' borderRadius='3xl'>
       <CardHeader>
         <Heading as='h2' size='lg' fontWeight='thin'>
           {title}
