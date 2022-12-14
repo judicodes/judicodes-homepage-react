@@ -10,6 +10,7 @@ function NavBar() {
       top='-14'
       align='center'
       shadow='md'
+      zIndex={1}
     >
       <Flex position='sticky' top='0' height='14' paddingX='8' width='full' align='center'>
         <Text fontSize='2xl' fontWeight='100'>
