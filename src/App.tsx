@@ -1,11 +1,13 @@
-import React from 'react';
-import { ChakraProvider, Box } from '@chakra-ui/react';
+import { Box, ChakraProvider } from '@chakra-ui/react';
+import CustomHeader from './components/CustomHeader';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <ChakraProvider>
-      <Box bg='teal.100' height='full'>
-        <h1>judicodes v2 under construction...</h1>
+      <Box bg='gray.100' height='full' minHeight='100vh'>
+        <NavBar />
+        <CustomHeader />
       </Box>
     </ChakraProvider>
   );
