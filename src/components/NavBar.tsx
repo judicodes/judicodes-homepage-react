@@ -13,7 +13,7 @@ function NavBar() {
       zIndex={1}
     >
       <Flex position='sticky' top='0' height='14' paddingX='8' width='full' align='center'>
-        <Text fontSize='2xl' fontWeight='100'>
+        <Text fontSize='3xl' fontWeight='thin'>
           judicodes
         </Text>
         <Spacer />
