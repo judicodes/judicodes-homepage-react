@@ -1,4 +1,5 @@
-import { Flex, Spacer, Text } from '@chakra-ui/react';
+import { Flex, Icon, Spacer, Text } from '@chakra-ui/react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function NavBar() {
   return (
@@ -17,8 +18,24 @@ function NavBar() {
           judicodes
         </Text>
         <Spacer />
-        <Text>LI</Text>
-        <Text>GH</Text>
+        <a
+          href='https://github.com/judicodes'
+          title="Go to Judith's GitHub"
+          aria-label="Go to Judith's GitHub"
+          target='_blank'
+          rel='noreferrer'
+        >
+          <Icon as={FaGithub} boxSize={8} marginRight={6} />
+        </a>
+        <a
+          href='https://linkedin.com/in/jboehlert'
+          title="Go to Judith's LinkedIn"
+          aria-label="Go to Judith's LinkedIn"
+          target='_blank'
+          rel='noreferrer'
+        >
+          <Icon as={FaLinkedin} boxSize={8} borderRadius='lg' />
+        </a>
       </Flex>
     </Flex>
   );
