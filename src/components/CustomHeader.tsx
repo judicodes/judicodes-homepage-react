@@ -1,9 +1,10 @@
-import { Flex, Heading, Image, Text } from '@chakra-ui/react';
+import { Flex, Heading, Image, Text, useColorModeValue } from '@chakra-ui/react';
 import source from '../assets/images/judi.webp';
 
 function CustomHeader({ ...rest }) {
+  const bgColor = useColorModeValue('orange.100', 'blue.900');
   return (
-    <Flex direction='column' align='center' bg='orange.100' {...rest}>
+    <Flex direction='column' align='center' bg={bgColor} {...rest}>
       <Heading as='h1' textTransform='uppercase' paddingBottom={4} fontSize='4xl' fontWeight='thin'>
         Judith Boehlert
       </Heading>

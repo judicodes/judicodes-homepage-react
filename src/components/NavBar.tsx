@@ -1,11 +1,26 @@
-import { Flex, Icon, Spacer, Text } from '@chakra-ui/react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import {
+  Flex,
+  Icon,
+  IconButton,
+  Spacer,
+  Text,
+  useColorMode,
+  useColorModeValue
+} from '@chakra-ui/react';
+import { FaAdjust, FaGithub, FaLinkedin } from 'react-icons/fa';
+import './NavBar.css';
 
 function NavBar() {
+  const iconBoxSize = 8;
+  const iconMargin = 6;
+
+  const { toggleColorMode } = useColorMode();
+  const bgColor = useColorModeValue('orange.200', 'blue.800');
+
   return (
     <Flex
       as='header'
-      bg='orange.200'
+      bg={bgColor}
       position='sticky'
       height='28'
       top='-14'
@@ -18,6 +33,15 @@ function NavBar() {
           judicodes
         </Text>
         <Spacer />
+        <IconButton
+          icon={<FaAdjust />}
+          variant='unstyled'
+          id='toggleColourModeButton'
+          marginRight={iconMargin}
+          aria-label='Toggle dark/light mode'
+          title='Toggle dark/light mode'
+          onClick={toggleColorMode}
+        />
         <a
           href='https://github.com/judicodes'
           title="Go to Judith's GitHub"
@@ -25,7 +49,7 @@ function NavBar() {
           target='_blank'
           rel='noreferrer'
         >
-          <Icon as={FaGithub} boxSize={8} marginRight={6} />
+          <Icon as={FaGithub} boxSize={iconBoxSize} marginRight={iconMargin} />
         </a>
         <a
           href='https://linkedin.com/in/jboehlert'
@@ -34,7 +58,7 @@ function NavBar() {
           target='_blank'
           rel='noreferrer'
         >
-          <Icon as={FaLinkedin} boxSize={8} borderRadius='lg' />
+          <Icon as={FaLinkedin} boxSize={iconBoxSize} borderRadius='lg' />
         </a>
       </Flex>
     </Flex>

@@ -1,0 +1,15 @@
+a {
+  display: flex;
+}
+
+#toggleColourModeButton svg {
+  margin: 0px 0px 0px 0px;
+  /* padding: 0px; */
+  height: 24px;
+  width: 24px;
+}
+
+#toggleColourModeButton {
+  display: flex;
+  justify-content: flex-end;
+}

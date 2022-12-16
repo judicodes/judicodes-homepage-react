@@ -1,4 +1,12 @@
-import { Card, CardBody, CardHeader, Divider, Heading, Text } from '@chakra-ui/react';
+import {
+  Card,
+  CardBody,
+  CardHeader,
+  Divider,
+  Heading,
+  Text,
+  useColorModeValue
+} from '@chakra-ui/react';
 
 export interface CustomCardProps {
   title: string;
@@ -6,8 +14,10 @@ export interface CustomCardProps {
 }
 
 function CustomCard({ title, content }: CustomCardProps) {
+  const bgColor = useColorModeValue('white', 'gray.900');
+
   return (
-    <Card width='xl' bg='white' borderRadius='3xl'>
+    <Card width='xl' bg={bgColor} borderRadius='3xl'>
       <CardHeader>
         <Heading as='h2' size='lg' fontWeight='thin'>
           {title}
