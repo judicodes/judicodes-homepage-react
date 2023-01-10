@@ -4,7 +4,7 @@ import InfoCardStack from '../components/InfoCardStack';
 import NavBar from '../components/NavBar';
 
 function MainPage() {
-  const bgColor = useColorModeValue('orange.50', 'blue.700');
+  const bgColor = useColorModeValue('gray.50', 'gray.600');
 
   return (
     <Box bg={bgColor} height='full' minHeight='100vh'>

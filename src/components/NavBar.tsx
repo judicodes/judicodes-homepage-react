@@ -15,7 +15,8 @@ function NavBar() {
   const iconMargin = 6;
 
   const { toggleColorMode } = useColorMode();
-  const bgColor = useColorModeValue('orange.200', 'blue.800');
+  const bgColor = useColorModeValue('gray.300', 'gray.800');
+  const color = useColorModeValue('customBlue.700', 'customPink.200');
 
   return (
     <Flex
@@ -29,13 +30,14 @@ function NavBar() {
       zIndex={1}
     >
       <Flex position='sticky' top='0' height='14' paddingX='8' width='full' align='center'>
-        <Text fontSize='3xl' fontWeight='thin'>
+        <Text fontSize='3xl' fontWeight='thin' fontFamily='Azeret Mono' color={color}>
           judicodes
         </Text>
         <Spacer />
         <IconButton
           icon={<FaAdjust />}
           variant='unstyled'
+          color={color}
           id='toggleColourModeButton'
           marginRight={iconMargin}
           aria-label='Toggle dark/light mode'
@@ -49,7 +51,7 @@ function NavBar() {
           target='_blank'
           rel='noreferrer'
         >
-          <Icon as={FaGithub} boxSize={iconBoxSize} marginRight={iconMargin} />
+          <Icon as={FaGithub} boxSize={iconBoxSize} marginRight={iconMargin} color={color} />
         </a>
         <a
           href='https://linkedin.com/in/jboehlert'
@@ -58,7 +60,7 @@ function NavBar() {
           target='_blank'
           rel='noreferrer'
         >
-          <Icon as={FaLinkedin} boxSize={iconBoxSize} borderRadius='lg' />
+          <Icon as={FaLinkedin} boxSize={iconBoxSize} borderRadius='lg' color={color} />
         </a>
       </Flex>
     </Flex>

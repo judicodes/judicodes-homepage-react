@@ -8,6 +8,7 @@ import '@fontsource/raleway/600.css';
 import '@fontsource/raleway/700.css';
 import '@fontsource/raleway/800.css';
 import '@fontsource/raleway/900.css';
+import '@fontsource/azeret-mono';
 import theme from './theme';
 import MainPage from './views/MainPage';
 
