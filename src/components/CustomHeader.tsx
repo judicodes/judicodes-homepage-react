@@ -2,18 +2,11 @@ import { Flex, Heading, Image, Text, useColorModeValue } from '@chakra-ui/react'
 import source from '../assets/images/judi.webp';
 
 function CustomHeader({ ...rest }) {
-  const bgColor = useColorModeValue('gray.100', 'gray.700');
   const colorTitle = useColorModeValue('customBlue.700', 'customPink.200');
   const colorSubtitle = useColorModeValue('customBlue.700', 'customPink.200');
 
   return (
-    <Flex
-      direction={{ base: 'column', md: 'row' }}
-      align='center'
-      justify='center'
-      bg={bgColor}
-      {...rest}
-    >
+    <Flex direction={{ base: 'column', md: 'row' }} align='center' justify='center' {...rest}>
       <Image
         src={source}
         alt='Judi in cold cold Canada'

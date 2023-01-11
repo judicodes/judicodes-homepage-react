@@ -36,16 +36,6 @@ const theme = extendTheme({
     heading: `'Raleway', sans-serif`,
     body: `'Raleway', sans-serif`
   },
-  styles: {
-    global: {
-      // TODO: transition ins not working yet
-      body: {
-        transition: 'linear',
-        transitionProperty: 'all',
-        transitionDuration: 'normal'
-      }
-    }
-  },
   config: {
     disableTransitionOnChange: false
   },
