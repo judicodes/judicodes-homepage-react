@@ -34,11 +34,13 @@ function InfoCardStack({ ...rest }) {
     {
       title: 'Some book recommendations',
       content: (
-        <Text fontSize={fontSize}>
+        <Text fontSize={fontSize} as='span'>
           <UnorderedList>
             <ListItem> So Good They Can&apos;t Ignore You (Cal Newport) </ListItem>
             <ListItem> Circe (Madeline Miller) </ListItem>
-            <ListItem> Talk Talk (T. C. Boyle) </ListItem>
+            <ListItem> Clean Code (Robert Martin) </ListItem>
+            <ListItem> Almost anything by Haruki Murakami </ListItem>
+            <ListItem> Almost anything by T.C. Boyle </ListItem>
           </UnorderedList>
         </Text>
       )
