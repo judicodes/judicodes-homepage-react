@@ -1,25 +1,47 @@
-import { VStack } from '@chakra-ui/react';
+import { ListItem, Text, UnorderedList, VStack } from '@chakra-ui/react';
 import CustomCard, { CustomCardProps } from './CustomCard';
 
 function InfoCardStack({ ...rest }) {
+  const fontSize = 'large';
   const cards: CustomCardProps[] = [
     {
       title: "Hi, I'm Judith.",
-      content: "I'm a full-stack developer based in Berlin."
+      content: (
+        <Text fontSize={fontSize}>
+          I&apos;m a full-stack developer based in Berlin and I like to build things on the
+          internet.
+        </Text>
+      )
     },
     {
       title: 'Tech Stack',
-      content:
-        'HTML - CSS - JavaScript/TypeScript - React - Vue.js - Angular - Node.js - Golang - Docker - AWS'
-    },
-    {
-      title: 'Currently Learning',
-      content: 'Kubernetes - Three.js - Patience'
+      content: (
+        <Text fontSize={fontSize}>
+          HTML - CSS - JavaScript/TypeScript - React - Vue.js - Angular - Node.js - Golang - Docker
+          - AWS
+        </Text>
+      )
     },
     {
       title: 'Things I like',
-      content:
-        'Books - Motorcycles - The Ocean - Linux - Croissants - Hummingbirds - Keeping things neat and simple'
+      content: (
+        <Text fontSize={fontSize}>
+          Books - Motorcycles - The Ocean - Linux - Croissants - Hummingbirds - Keeping things neat
+          and simple
+        </Text>
+      )
+    },
+    {
+      title: 'Some book recommendations',
+      content: (
+        <Text fontSize={fontSize}>
+          <UnorderedList>
+            <ListItem> So Good They Can&apos;t Ignore You (Cal Newport) </ListItem>
+            <ListItem> Circe (Madeline Miller) </ListItem>
+            <ListItem> Talk Talk (T. C. Boyle) </ListItem>
+          </UnorderedList>
+        </Text>
+      )
     }
   ];
 

@@ -28,7 +28,7 @@ function CustomHeader({ ...rest }) {
           Judith Boehlert
         </Heading>
         <Text as='h2' paddingBottom={4} fontSize='xl' color={colorSubtitle}>
-          Full-Stack | Automation | Developer Experience
+          Software Engineer | Automation | Developer Experience
         </Text>
       </Flex>
     </Flex>
