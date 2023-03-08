@@ -5,6 +5,7 @@ import { useWindowSize } from 'usehooks-ts';
 import ConfettiHeart from '../components/ConfettiHeart';
 import CustomHeader from '../components/CustomHeader';
 import InfoCardStack from '../components/InfoCardStack';
+import LegalStuff from '../components/LegalStuff';
 import NavBar from '../components/NavBar';
 
 function MainPage() {
@@ -43,6 +44,16 @@ function MainPage() {
         <NavBar />
         <CustomHeader paddingTop={8} paddingBottom={36} />
         <InfoCardStack paddingBottom={8} marginTop={-24} />
+        <Box
+          position='relative'
+          display='flex'
+          bottom={8}
+          marginTop={36}
+          width='100%'
+          justifyContent='center'
+        >
+          <LegalStuff />
+        </Box>
       </Box>
       <Box position='fixed' bottom={16} right={16}>
         <ConfettiHeart showConfetti={confettiParty} />
