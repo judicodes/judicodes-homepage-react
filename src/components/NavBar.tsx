@@ -30,7 +30,12 @@ function NavBar() {
       zIndex={1}
     >
       <Flex position='sticky' top='0' height='14' paddingX='8' width='full' align='center'>
-        <Text fontSize='3xl' fontWeight='thin' fontFamily='Azeret Mono' color={color}>
+        <Text
+          fontSize={{ base: 'lg', md: 'xl', lg: '2xl', xl: '3xl' }}
+          fontWeight='thin'
+          fontFamily='Azeret Mono'
+          color={color}
+        >
           judicodes
         </Text>
         <Spacer />

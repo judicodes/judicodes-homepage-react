@@ -5,6 +5,7 @@ import {
   AccordionItem,
   AccordionPanel,
   Box,
+  Button,
   ListItem,
   Modal,
   ModalBody,
@@ -21,12 +22,12 @@ function LegalStuff() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Text onClick={onOpen} cursor='pointer' color='gray.500'>
+      <Button onClick={onOpen} variant='ghost' color='gray.500'>
         Legal Notice & Privacy Policy
-      </Text>
+      </Button>
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent maxWidth='40%'>
+        <ModalContent maxWidth={{ base: '90%', md: '70%', lg: '50%', xl: '40%' }}>
           <ModalHeader>Legal Notice & Privacy Policy</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
