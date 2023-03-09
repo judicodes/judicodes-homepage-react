@@ -10,7 +10,7 @@ function CustomHeader({ ...rest }) {
       <Image
         src={source}
         alt='Judi in cold cold Canada'
-        boxSize='xs'
+        boxSize={{ base: '2xs', md: 'xs' }}
         borderRadius='full'
         marginRight={{ md: 8 }}
         marginBottom={{ base: 8, md: 0 }}
@@ -27,7 +27,14 @@ function CustomHeader({ ...rest }) {
         >
           Judith Boehlert
         </Heading>
-        <Text as='h2' paddingBottom={4} fontSize='xl' color={colorSubtitle}>
+        <Text
+          as='h2'
+          paddingBottom={4}
+          paddingX={{ base: 6, md: 0 }}
+          fontSize='xl'
+          color={colorSubtitle}
+          textAlign={{ base: 'center', md: 'left' }}
+        >
           Software Engineer | Automation | Developer Experience
         </Text>
       </Flex>

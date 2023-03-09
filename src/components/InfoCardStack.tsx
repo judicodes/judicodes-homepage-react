@@ -17,8 +17,7 @@ function InfoCardStack({ ...rest }) {
       title: 'Tech Stack',
       content: (
         <Text fontSize={fontSize}>
-          HTML - CSS - JavaScript/TypeScript - React - Vue.js - Angular - Node.js - Golang - Docker
-          - AWS
+          HTML - CSS - JavaScript/TypeScript - React - Vue.js - Angular - Node.js - Docker - AWS
         </Text>
       )
     },
