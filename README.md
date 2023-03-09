@@ -1,5 +1,7 @@
 # judicodes-homepage
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/89c2930e-79ca-4255-a8e5-b45165eb4a4d/deploy-status)](https://app.netlify.com/sites/frabjous-monstera-1dcd6b/deploys)
+
 This is the source code for my personal website [judicodes.com](https://www.judicodes.com).
 
 It is built with React, TypeScript, Chakra UI and hosted on Netlify.
