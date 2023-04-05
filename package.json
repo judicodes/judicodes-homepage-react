@@ -9,7 +9,7 @@
   "dependencies": {
     "@chakra-ui/react": "^2.4.3",
     "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.5",
+    "@emotion/styled": "^11.10.6",
     "@fontsource/azeret-mono": "^4.5.12",
     "@fontsource/raleway": "^4.5.12",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
