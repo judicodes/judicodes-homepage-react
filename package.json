@@ -7,7 +7,7 @@
     "npm": "^8"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.4.3",
+    "@chakra-ui/react": "^2.5.5",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@fontsource/azeret-mono": "^4.5.12",
