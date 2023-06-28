@@ -10,7 +10,7 @@
     "@chakra-ui/react": "^2.6.0",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.8",
-    "@fontsource/azeret-mono": "^4.5.12",
+    "@fontsource/azeret-mono": "^5.0.3",
     "@fontsource/raleway": "^4.5.12",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
