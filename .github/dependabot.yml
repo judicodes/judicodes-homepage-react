@@ -1,11 +1,11 @@
-version: 2
-updates:
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "daily"
-    open-pull-requests-limit: 3
-    assignees:
-      - "judicodes"
-    reviewers:
-      - "judicodes"
+# version: 2
+# updates:
+#   - package-ecosystem: "npm"
+#     directory: "/"
+#     schedule:
+#       interval: "daily"
+#     open-pull-requests-limit: 3
+#     assignees:
+#       - "judicodes"
+#     reviewers:
+#       - "judicodes"
